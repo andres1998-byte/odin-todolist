@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+        <title>To Do List</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="leftheader">
+                <div class="todotext"><em>To Do List</em></div>
+                <img src="./images/add-512.png" alt="addimg">
+            </div>
+
+            <div class="rightheader">
+
+            </div>
+            
+
+        </div>
+
+        <div class="sidebar">
+            <div class="defprojects">
+                <div class="project">Today</div>
+                <div class="project">Tomorrow</div>
+                <div class="project">This Week</div>
+                <div class="project">This Month</div>
+                <div class="project">This Year</div>
+            </div>
+
+            <div class="otherprojects">
+                <div class="addproject">
+                    <button id="btnaddproject">Add project</button>
+                </div>
+                
+                <div class="project">Sample project</div>
+
+            </div>
+
+        </div>
+
+        <div class="main">
+            <div class="todoitems">
+                <div class="todoitem">Sample Todo Item</div>
+                <form id="form">
+                    <div class="formblock">
+                        <label for="title">Title: </label>
+                        <input type="text" id="title" placeholder="Go to the doctor..."required>
+                    </div>
+
+                    <div class="formblock">
+                        <label for="description">Description: </label>
+                        <input type="text" id="description" placeholder="Check that sprained ankle..."required>
+                    </div>
+
+                    <div class="formblock">
+                        <label for="duedate">Due date: </label>
+                        <input type="datetime-local" id="duedate" required>
+                    </div>
+
+                    <div class="formblock">
+                        <label for="priority">Priority: </label>
+                        <input type="number" id="priority" required>
+                    </div>
+
+                    <button type="submit" id="btnaddtodo">Add Task</button>
+                </form>
+
+            </div>
+        </div>
+
+        
+    
+    </body>
+</html>
