@@ -41,18 +41,15 @@ img[alt=addimg] {
     gap: 80px;
 }
 
-.defprojects, .otherprojects {
+.defprojects {
     display:grid;
     gap: 10px;
 }
 
 .defprojects {
-    grid-template-rows: repeat(5,40px);
-}
-
-.otherprojects {
     grid-template-rows: repeat(10,40px);
 }
+
 
 .project {
     font-weight: 700;
@@ -108,6 +105,7 @@ img[alt=addimg] {
     padding: 10px;
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 label {
@@ -128,9 +126,15 @@ input {
 }
 
 #form {
-    margin-top: 20px; 
+    position: absolute;
+    background-color: rgb(211, 204, 204);
+    border-radius: 20px;
+    border: 5px solid black;
+    top: 200px;
+    left: 500px;
     display: flex;
     flex-direction: column;
+    padding: 20px;
     gap: 15px;
 }
 
@@ -153,4 +157,36 @@ input {
 
 }
 
+#projectform {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+#projecttitle {
+    width: 300px;
+}
+
+#btnadd {
+    background-color: white;
+    color: rgb(53, 108, 190);
+    font-size: 17px;
+    font-weight: 700;
+    border: 3px solid rgb(53, 108, 190);
+    border-radius: 10px;
+    padding: 7px;
+    height: 40px;
+    width: 150px;
+}
+
+#btnadd:hover {
+    background-color: rgb(239, 241, 245);
+    box-shadow: 5px 5px #888888;
+
+}
+
+.active-project {
+    background-color: rgb(46, 96, 172);
+    box-shadow: 5px 5px;
+
+}
