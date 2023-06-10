@@ -69,6 +69,13 @@ function openProjects () {
 
     }
 
+    const deleteProjectButton=document.querySelector('[data-delete-project]');
+    deleteProjectButton.addEventListener("click", function (){
+        projects=projects.filter(project => project.id !== selectedProjectId);
+        selectedProjectId=null;
+        saveAndRender();
+    })
+
 }
 
 export default openProjects;
