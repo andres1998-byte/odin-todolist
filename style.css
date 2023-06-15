@@ -108,7 +108,7 @@ img[alt=addimg] {
     gap: 20px;
 }
 
-label {
+#label1 {
     font-size: 20px;
     font-weight: 700;
     margin-right: 20px;
@@ -170,7 +170,7 @@ input {
     width: 250px;
 }
 
-#btnadd, #btndelproject {
+#btnadd, #btndelproject, #btndelcomplete {
     background-color: white;
     color: rgb(53, 108, 190);
     font-size: 17px;
@@ -197,14 +197,21 @@ input {
 
 
 
-#btnadd:hover, #btndelproject:hover {
+#btnadd:hover, #btndelproject:hover, #btndelcomplete:hover {
     background-color: rgb(239, 241, 245);
     box-shadow: 5px 5px #888888;
 
 }
 
 .active-project {
-    background-color: rgb(46, 96, 172);
+    background-color: rgb(29, 71, 134);
     box-shadow: 5px 5px;
-
 }
+
+#btndelcomplete {
+    height: 50px;
+    width: 220px;
+    padding: 3px;
+}
+
+
