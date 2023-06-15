@@ -2,4 +2,4 @@
 
 In this project, I created a To Do List web application.
 
-Link to live website: https://github.com/andres1998-byte/odin-todolist
+Link to live website: https://andres1998-byte.github.io/odin-todolist/
