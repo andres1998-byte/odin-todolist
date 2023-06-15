@@ -16,14 +16,10 @@
             <div class="rightheader">
 
             </div>
-            
-
         </div>
 
         <div class="sidebar">
             <div class="defprojects">
-
-
             
             </div>
 
@@ -35,48 +31,42 @@
                 <button id="btndelproject" data-delete-project>Delete project</button>
             </div>
 
-            
+            <div class="deletecomplete">
+                <button id="btndelcomplete" data-delete-complete>Delete completed tasks</button>
+            </div>
+
             <form id="projectform" style="display:none">
-                <label for="projecttitle">Project: </label>
+                <label for="projecttitle" id="label1">Project: </label>
                 <input type="text" id="projecttitle" placeholder="School..."required>
                 <button type="submit" id="btnadd">Add</button>
             </form>
-
-        
-        
-
-            
-            
-                
-
-            
-
         </div>
 
         <div class="main">
-            <div class="todoitems">
-                <div class="todoitem">Sample</div>
+            <div class="todoitems" data-todo-items>
 
             </div>
 
+            
+
             <form id="form" style="display:none">
                 <div class="formblock">
-                    <label for="title">Title: </label>
+                    <label for="title" id="label1">Title: </label>
                     <input type="text" id="title" placeholder="Go to the doctor..."required>
                 </div>
 
                 <div class="formblock">
-                    <label for="description">Description: </label>
+                    <label for="description" id="label1">Description: </label>
                     <input type="text" id="description" placeholder="Check that sprained ankle..."required>
                 </div>
 
                 <div class="formblock">
-                    <label for="duedate">Due date: </label>
+                    <label for="duedate" id="label1">Due date: </label>
                     <input type="datetime-local" id="duedate" required>
                 </div>
 
                 <div class="formblock">
-                    <label for="priority">Priority: </label>
+                    <label for="priority" id="label1">Priority: </label>
                     <input type="number" id="priority" required>
                 </div>
 
